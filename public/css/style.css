@@ -134,7 +134,7 @@ footer {
   color: white;
   text-align: center;
   padding: 20px 0;
-  margin-top: auto; /* Membuat footer berada di bawah */
+  margin-top: auto; /* Menjaga footer tetap di bawah */
   position: relative;
   bottom: 0;
   width: 100%;
@@ -170,4 +170,3 @@ footer p {
 footer p span {
   font-weight: bold;
 }
-
