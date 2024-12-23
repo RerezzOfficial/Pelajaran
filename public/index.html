@@ -36,5 +36,31 @@ Akan Ku Pastikan Jika Tidak Dengan Mu Maka Tidak Dengan Yang Lain :)
   </div>
 
   <script src="/js/script.js"></script>
+  <!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="social-icons">
+      <a href="https://https://t.me/rerezz_official" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a href="https://https://www.youtube.com/@rerezzoffc" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://instagram.com/rezz_hosting.0208" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/6285216955233" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>Jumlah Pengunjung: <span id="visitor-count">Loading...</span></p>
+  </div>
+</footer>
+
+<script>
+  // Mengambil jumlah pengunjung dari API dan menampilkannya di footer
+  fetch('/api/visitor-count')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitor-count').textContent = data.visitorCount;
+    })
+    .catch(err => {
+      console.error('Error fetching visitor count:', err);
+      document.getElementById('visitor-count').textContent = 'Error';
+    });
+</script>
+  
 </body>
 </html>
