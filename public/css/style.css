@@ -126,4 +126,48 @@
 
     .copy-icon:hover {
       color: #00bfff; /* Warna biru lebih terang saat hover */
-        }
+    }
+
+    /* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Membuat footer berada di bawah */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 15px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #f0f0f0;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+footer p span {
+  font-weight: bold;
+}
+
