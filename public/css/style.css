@@ -134,17 +134,16 @@ footer {
   color: white;
   text-align: center;
   padding: 20px 0;
-  margin-top: auto; /* Menjaga footer tetap di bawah */
-  position: relative;
+  position: fixed; /* Menetapkan posisi tetap di bawah halaman */
   bottom: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000; /* Memastikan footer tidak tertutup konten */
 }
 
 .footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: block; /* Menghilangkan flexbox dan menggunakan blok biasa */
+  text-align: center;
 }
 
 .social-icons {
