@@ -1,0 +1,129 @@
+    :root {
+      --bg-color: #1e1e1e;
+      --text-color: #d4d4d4;
+      --textarea-bg: #1e1e1e;
+      --textarea-text: #d4d4d4;
+      --icon-color: #1e90ff; /* Biru terang */
+    }
+
+    [data-theme="light"] {
+      --bg-color: #ffffff;
+      --text-color: #333333;
+      --textarea-bg: #f4f4f4;
+      --textarea-text: #333333;
+      --icon-color: #007acc; /* Biru terang untuk mode terang */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .header, .proj {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .header {
+      width: 90%;
+      text-align: center;
+      padding: 15px;
+      border: 2px solid var(--text-color);
+      margin: 15px;
+      border-radius: 55px 0 55px 0;
+      background-color: var(--textarea-bg);
+      color: #ffffff;
+      position: relative;
+    }
+
+    .header h1  {
+      margin: 5px;
+      color: var(--text-color);
+    }
+    
+    .header p {
+      color: var(--text-color);
+      margin: 5px;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: var(--text-color);
+      font-size: 24px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .proj {
+      width: 94%;
+      margin: 15px;
+      border: 2px solid var(--text-color);
+      border-radius: 20px 0;
+      overflow: hidden;
+      background-color: var(--textarea-bg);
+      position: relative;
+      
+    }
+
+    .proj h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 30px;
+      margin: 10px 0;
+      padding: 0;
+    }
+
+    .proj h1 .copy-icon {
+      margin-left: auto; /* Menambahkan jarak ke sisi kanan judul */
+      cursor: pointer;
+      color: var(--icon-color);
+      font-size: 20px;
+      transition: color 0.3s;
+      padding: 15px;
+    }
+
+    .proj hr {
+      border-bottom: 3px solid var(--text-color);
+    }
+
+    textarea {
+      width: 100%;
+      max-height: 300px;
+      padding: 15px;
+      border: none;
+      resize: none;
+      outline: none;
+      background: var(--textarea-bg);
+      color: var(--textarea-text);
+      font-family: "Courier New", Courier, monospace;
+      font-size: 19px;
+      overflow-x: auto;
+      line-height: 1.5;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    textarea::selection {
+      background-color: var(--text-color);
+      color: var(--text-color);
+    }
+
+    .copy-icon:hover {
+      color: #00bfff; /* Warna biru lebih terang saat hover */
+        }
