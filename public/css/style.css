@@ -134,15 +134,15 @@ footer {
   color: white;
   text-align: center;
   padding: 20px 0;
-  position: fixed; /* Menetapkan posisi tetap di bawah halaman */
-  bottom: 0;
+  position: fixed; /* Menetapkan posisi tetap */
+  bottom: 0; /* Menempatkan footer di bawah layar */
   left: 0;
   width: 100%;
-  z-index: 1000; /* Memastikan footer tidak tertutup konten */
+  z-index: 1000; /* Memastikan footer tetap di atas konten */
 }
 
 .footer-content {
-  display: block; /* Menghilangkan flexbox dan menggunakan blok biasa */
+  display: block; /* Menggunakan blok untuk tata letak */
   text-align: center;
 }
 
